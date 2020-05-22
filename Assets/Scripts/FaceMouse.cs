@@ -8,11 +8,11 @@ public class FaceMouse : MonoBehaviour
     Vector2 movement;
     public Rigidbody2D rb;
     public Vector2 flip;
-    public SpriteRenderer renderer;
+    public SpriteRenderer sp;
 
    void Start()
     {
-        renderer = GetComponent<SpriteRenderer>();
+        sp = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -28,13 +28,13 @@ public class FaceMouse : MonoBehaviour
 
         if (mousePosition.x > gameObject.transform.parent.position.x)
         {
-            gameObject.transform.localPosition = new Vector2(0.83f, -0.02f);
-            renderer.flipY = false;
+            gameObject.transform.localPosition = new Vector2(.9f, -0.001f);
+            sp.flipY = false;
         }
         else
         {
-            gameObject.transform.localPosition = new Vector2(-0.83f, -0.02f);
-            renderer.flipY = true;
+            gameObject.transform.localPosition = new Vector2(-.9f, -0.001f);
+            sp.flipY = true;
         }
 
         Vector2 direction = new Vector2(

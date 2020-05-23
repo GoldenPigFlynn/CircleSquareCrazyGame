@@ -8,6 +8,7 @@ public class FollowPlayer: MonoBehaviour
     private Vector2 movement;
     public Rigidbody2D rb;
     public float moveSpeed = 5f;
+    public GameObject weapon;
 
     void Start()
     {
@@ -37,5 +38,6 @@ public class FollowPlayer: MonoBehaviour
     {
         Debug.Log(hitInfo.name);
         Destroy(gameObject);
+        weapon.GetComponent<Weapon>().circleCap -= 1;
     }
 }

@@ -16,7 +16,6 @@ public class Spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 position = new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
-        Instantiate(circlePrefab, position, Quaternion.identity);
+
     }
 }

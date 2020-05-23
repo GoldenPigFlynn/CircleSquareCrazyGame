@@ -9,10 +9,12 @@ public class FaceMouse : MonoBehaviour
     public Rigidbody2D rb;
     public Vector2 flip;
     public SpriteRenderer sp;
+    public int foo;
 
    void Start()
     {
         sp = GetComponent<SpriteRenderer>();
+       
     }
 
     // Update is called once per frame

@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public GameObject circlePrefab;
+    public GameObject flashPrefab;
     public float counterSet = 3f;
     public float counter = 3f;
     public float circleCap = 5f;
@@ -33,6 +34,7 @@ public class Weapon : MonoBehaviour
     void Shoot ()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Instantiate(flashPrefab, firePoint.position, firePoint.rotation);
     }
 
     void RunCounter()

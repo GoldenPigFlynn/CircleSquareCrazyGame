@@ -240,7 +240,11 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3688759270019156634, guid: ce37006ca22d1954a8fd37a7eceb7a53,
     type: 3}
   circlePrefab: {fileID: 1361702523}
+  flashPrefab: {fileID: 6065211513151653337, guid: 767058c2d8bdad943842ebd63f01170e,
+    type: 3}
   counterSet: 10
+  counter: 3
+  circleCap: 5
 --- !u!114 &624468050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,8 +506,6 @@ GameObject:
   - component: {fileID: 1361702524}
   - component: {fileID: 1361702527}
   - component: {fileID: 1361702526}
-  - component: {fileID: 1361702529}
-  - component: {fileID: 1361702528}
   m_Layer: 0
   m_Name: circle
   m_TagString: Untagged
@@ -612,31 +614,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1361702528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361702523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7711bfb3322d3be4794efdbbce08c478, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 624468052}
-  rb: {fileID: 1361702527}
-  moveSpeed: 5
---- !u!114 &1361702529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361702523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d189e7138b82f4181bcb4036696bf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePrefab: {fileID: 0}
